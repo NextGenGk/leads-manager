@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    --font-inter: 'Inter', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: var(--font-inter);
+    background: #F5F3EE;
+  }
+}
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #D5CFC6; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #B5AFA6; }
+
+/* ── Priority indicators ── */
+.priority-high  { @apply bg-red-50 text-red-700 border border-red-200; }
+.priority-med   { @apply bg-amber-50 text-amber-700 border border-amber-200; }
+.priority-low   { @apply bg-stone-100 text-stone-600 border border-stone-200; }
+
+/* ── Score bubble ── */
+.score-high { @apply bg-red-50 text-red-700 ring-1 ring-red-200; }
+.score-med  { @apply bg-amber-50 text-amber-700 ring-1 ring-amber-200; }
+.score-low  { @apply bg-stone-100 text-stone-600 ring-1 ring-stone-200; }
+
+/* ── Segment badges ── */
+.seg-premium { @apply bg-violet-50 text-violet-700 border border-violet-200; }
+.seg-mid     { @apply bg-blue-50 text-blue-700 border border-blue-200; }
+.seg-budget  { @apply bg-stone-100 text-stone-600 border border-stone-200; }
+
+/* ── Lead status ── */
+.status-new        { @apply bg-sky-50 text-sky-700 border border-sky-200; }
+.status-contacted  { @apply bg-indigo-50 text-indigo-700 border border-indigo-200; }
+.status-in_progress { @apply bg-amber-50 text-amber-700 border border-amber-200; }
+.status-converted  { @apply bg-emerald-50 text-emerald-700 border border-emerald-200; }
+.status-lost       { @apply bg-red-50 text-red-600 border border-red-200; }
+.status-on_hold    { @apply bg-stone-100 text-stone-500 border border-stone-200; }
+
+/* ── Typing cursor animation ── */
+@keyframes blink { 50% { opacity: 0; } }
+.typing-cursor {
+  display: inline-block;
+  width: 2px; height: 1em;
+  background: #B85C38;
+  vertical-align: text-bottom;
+  margin-left: 1px;
+  animation: blink 0.8s step-end infinite;
+}
+
+/* ── Shimmer for loading ── */
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #F0ECE4 25%, #E8E2D8 50%, #F0ECE4 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
