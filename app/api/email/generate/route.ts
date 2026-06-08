@@ -29,7 +29,7 @@ const PLATFORM_CONFIG = {
 3. Pitch the service as the direct solution to their specific digital weakness.
 4. Include 2–3 hyper-specific benefits for THIS business, not generic benefits.
 5. CTA: a 15-minute call or WhatsApp message — low friction.
-6. Sign off: "FrequnSync Genz | https://www.frequnsync.online/ | support@frequnsync.online | +91 7582985761 / +91 9770075755"
+6. Sign off: "FrequnSync Genz | https://www.frequnsync.online/ | connect@frequnsync.online | +91 7582985761 / +91 9770075755"
 7. Output format — first line: SUBJECT: [subject]
 Then blank line, then email body. Nothing else before SUBJECT:.`,
   },
@@ -41,7 +41,7 @@ Then blank line, then email body. Nothing else before SUBJECT:.`,
 3. Mention 1–2 specific facts about their business.
 4. Pitch the service briefly as something that solves their pain point.
 5. CTA: "Can I send you some ideas? Just reply here."
-6. Sign off: "FrequnSync Genz | https://www.frequnsync.online/ | support@frequnsync.online"
+6. Sign off: "FrequnSync Genz | https://www.frequnsync.online/ | connect@frequnsync.online"
 7. NO subject line. Just the message body. Under 100 words.`,
   },
   INSTAGRAM: {
@@ -52,7 +52,7 @@ Then blank line, then email body. Nothing else before SUBJECT:.`,
 3. Mention ONE specific thing you noticed about their online presence.
 4. Pitch the service in one line — what you can do for them.
 5. CTA: "DM me if you'd like to see some ideas 🙌"
-6. Sign off: "FrequnSync Genz | https://www.frequnsync.online/ | support@frequnsync.online"
+6. Sign off: "FrequnSync Genz | https://www.frequnsync.online/ | connect@frequnsync.online"
 7. NO subject line. Just the DM body. Under 60 words.`,
   },
 };
